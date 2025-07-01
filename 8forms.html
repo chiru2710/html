@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <center>
+        <img src="./images/rtc.png" alt="logo" width="200px">
+        <h1>Andhra Pradesh State Road Transport Corporation</h1>
+        <h2>General Bus Pass Application</h2>
+    </center>
+    <fieldset>
+        <legend>Application Details</legend>
+        <table>
+            <tr>
+                <td style="padding-right: 250px;">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Name" required id="name">
+                </td>
+
+                <br>
+                <td style="padding-left: 50px;">
+                    <label for="Father's Name/Gaurdian Name">Father's Name/Gaurdian Name:</label>
+                    <input type="text" placeholder="Father's Name/Gaurdian Name" required
+                        id="Father's Name/Gaurdian Name">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 250px;">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" placeholder="date of birth" required id="dob">
+                </td>
+                <td style="padding-left: 50px;">
+                    <label style="padding-right: 30px;">Gender</label>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" value="male" name="gender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone">Phone No: </label>
+                    <input type="number" id="Phone" placeholder="Phone No" maxlength="10">
+                </td>
+                <td style="padding-left: 50px;">
+                    <label for="aadhar">Adhaar No:</label>
+                    <input type="number" id="aadhar" placeholder="Adhaar No" maxlength="12">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="whatsapp">WhatsApp No:</label>
+                    <input type="number" placeholder="WhatsApp No" id="whatsapp" maxlength="10">
+                </td>
+                <td style="padding-left: 50px;">
+                    <label for="Email">Email id:</label>
+                    <input type="email" placeholder="Email id" id="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="file">Photo: </label>
+                    <input type="file" id="file" placeholder="photo">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Resdential Address Details</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="Address">Applicant's Address: </label>
+                    <textarea name="Address" id="Address" width="50"></textarea>
+                </td>
+                <td style="padding-left: 50px;">
+                    <label for="Hyderabad">District:</label>
+                    <select name="Hyderabad" id="Hyderabad">
+                        <option>--Select District--</option>
+                        <option value="Hyderabad">Guntur</option>
+                        <option value="Hyderabad">Krishna</option>
+                        <option value="Hyderabad">Ongole</option>
+                        <option value="Hyderabad">Kadapa</option>
+                        <option value="Hyderabad">Bapatla</option>
+                        <option value="Hyderabad">Chittor</option>
+                        <option value="Hyderabad">Kurnool</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mandal">Mandal:</label>
+                    <select name="mandal" id="mandal">
+                        <option>--Select Mandal--</option>
+                        <!-- Guntur -->
+                        <optgroup label="Guntur">
+                            <option>Guntur East</option>
+                            <option>Guntur West</option>
+                            <option>Pedakakani</option>
+                            <option>Tadikonda</option>
+                            <option>Thullur</option>
+                            <option>Mangalagiri</option>
+                            <option>Tadepalli</option>
+                            <option>Amaravathi</option>
+                            <option>Medikonduru</option>
+                            <option>Phirangipuram</option>
+                            <option>Chebrolu</option>
+                            <option>Vatticherukuru</option>
+                        </optgroup>
+
+                        <!-- Krishna -->
+                        <optgroup label="Krishna">
+                            <option>Machilipatnam</option>
+                            <option>Pedana</option>
+                            <option>Pamarru</option>
+                            <option>Bantumilli</option>
+                            <option>Koduru</option>
+                            <option>Avanigadda</option>
+                            <option>Guduru</option>
+                            <option>Mopidevi</option>
+                            <option>Movva</option>
+                            <option>Challapalli</option>
+                            <option>Ghantasala</option>
+                            <option>Kruthivennu</option>
+                            <option>Nagayalanka</option>
+                        </optgroup>
+
+                        <!-- Ongole / Prakasam -->
+                        <optgroup label="Ongole">
+                            <option>Ongole</option>
+                            <option>Santhanuthalapadu</option>
+                            <option>Tangutur</option>
+                            <option>Singarayakonda</option>
+                            <option>Kandukur</option>
+                            <option>Podili</option>
+                            <option>Kanigiri</option>
+                            <option>Darsi</option>
+                            <option>Addanki</option>
+                            <option>Markapur</option>
+                            <option>Yerragondapalem</option>
+                        </optgroup>
+
+                        <!-- Kadapa -->
+                        <optgroup label="Kadapa">
+                            <option>Kadapa</option>
+                            <option>Proddatur</option>
+                            <option>Pulivendula</option>
+                            <option>Jammalamadugu</option>
+                            <option>Badvel</option>
+                            <option>Rayachoti</option>
+                            <option>Mydukur</option>
+                            <option>Kamalapuram</option>
+                            <option>Vempalli</option>
+                            <option>Sidhout</option>
+                            <option>Chinnamandem</option>
+                        </optgroup>
+
+                        <!-- Bapatla -->
+                        <optgroup label="Bapatla">
+                            <option>Bapatla</option>
+                            <option>Chirala</option>
+                            <option>Karlapalem</option>
+                            <option>Pittalavanipalem</option>
+                            <option>Repalle</option>
+                            <option>Nagaram</option>
+                            <option>Cherukupalli</option>
+                            <option>Bhattiprolu</option>
+                            <option>Vemuru</option>
+                            <option>Kakumanu</option>
+                            <option>Ponnur</option>
+                            <option>Kollur</option>
+                        </optgroup>
+
+                        <!-- Chittoor -->
+                        <optgroup label="Chittoor">
+                            <option>Chittoor</option>
+                            <option>Palamaner</option>
+                            <option>Puthalapattu</option>
+                            <option>Bangarupalem</option>
+                            <option>Kuppam</option>
+                            <option>Gangadhara Nellore</option>
+                            <option>Pakala</option>
+                            <option>Pileru</option>
+                            <option>Srikalahasti</option>
+                            <option>Nagari</option>
+                            <option>Satyavedu</option>
+                        </optgroup>
+
+                        <!-- Kurnool -->
+                        <optgroup label="Kurnool">
+                            <option>Kurnool</option>
+                            <option>Adoni</option>
+                            <option>Nandyal</option>
+                            <option>Yemmiganur</option>
+                            <option>Pattikonda</option>
+                            <option>Kodumur</option>
+                            <option>Alur</option>
+                            <option>Banaganapalle</option>
+                            <option>Dhone</option>
+                            <option>Bethamcherla</option>
+                            <option>Gonegandla</option>
+                            <option>Devanakonda</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td style="padding: 50px;">
+                    <label for="village">Village:</label>
+                    <select name="village" id="village">
+                        <option>--Select Village--</option>
+
+                        <!-- Pedakakani Mandal (Guntur) -->
+                        <optgroup label="Pedakakani">
+                            <option>Pedakakani</option>
+                            <option>Ravela</option>
+                            <option>Kunchanapalli</option>
+                            <option>Chinakakani</option>
+                        </optgroup>
+
+                        <!-- Mangalagiri Mandal (Guntur) -->
+                        <optgroup label="Mangalagiri">
+                            <option>Mangalagiri Town</option>
+                            <option>Atmakur</option>
+                            <option>Nutakki</option>
+                            <option>Chinavadlapudi</option>
+                        </optgroup>
+
+                        <!-- Amaravathi Mandal (Guntur) -->
+                        <optgroup label="Amaravathi">
+                            <option>Amaravathi</option>
+                            <option>Dharanikota</option>
+                            <option>Kondaveedu</option>
+                            <option>Lingapuram</option>
+                        </optgroup>
+
+                        <!-- Machilipatnam Mandal (Krishna) -->
+                        <optgroup label="Machilipatnam">
+                            <option>Machilipatnam Urban</option>
+                            <option>Machilipatnam Rural</option>
+                            <option>Gudur</option>
+                            <option>Chinnapuram</option>
+                        </optgroup>
+
+                        <!-- Avanigadda Mandal (Krishna) -->
+                        <optgroup label="Avanigadda">
+                            <option>Avanigadda</option>
+                            <option>Gollapalem</option>
+                            <option>Nagayalanka</option>
+                            <option>Gudivada Lanka</option>
+                        </optgroup>
+
+                        <!-- Ongole Mandal (Prakasam) -->
+                        <optgroup label="Ongole">
+                            <option>Ongole</option>
+                            <option>Santhanuthalapadu</option>
+                            <option>Koppole</option>
+                            <option>Pandillapalli</option>
+                        </optgroup>
+
+                        <!-- Kadapa Mandal -->
+                        <optgroup label="Kadapa">
+                            <option>Kadapa</option>
+                            <option>Chinna Chowk</option>
+                            <option>Rajupalem</option>
+                            <option>Putlampalli</option>
+                        </optgroup>
+
+                        <!-- Palamaner Mandal (Chittoor) -->
+                        <optgroup label="Palamaner">
+                            <option>Palamaner</option>
+                            <option>Gundlasagaram</option>
+                            <option>Venkatapuram</option>
+                            <option>Kurabalakota</option>
+                        </optgroup>
+
+                        <!-- Kurnool Mandal -->
+                        <optgroup label="Kurnool">
+                            <option>Kurnool Urban</option>
+                            <option>Kurnool Rural</option>
+                            <option>Velugodu</option>
+                            <option>Gudur (Kurnool)</option>
+                        </optgroup>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pincode">Pincode: </label>
+                    <input type="number" placeholder="Pincode" id="Pincode" maxlength="6">
+                </td>
+
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <label for="city">City</label>
+        <select name="City" id="City">
+            <option>--Select City--</option>
+            <!-- Guntur -->
+            <optgroup label="Guntur">
+                <option>Guntur East</option>
+                <option>Guntur West</option>
+                <option>Pedakakani</option>
+                <option>Tadikonda</option>
+                <option>Thullur</option>
+                <option>Mangalagiri</option>
+                <option>Tadepalli</option>
+                <option>Amaravathi</option>
+                <option>Medikonduru</option>
+                <option>Phirangipuram</option>
+                <option>Chebrolu</option>
+                <option>Vatticherukuru</option>
+            </optgroup>
+
+            <!-- Krishna -->
+            <optgroup label="Krishna">
+                <option>Machilipatnam</option>
+                <option>Pedana</option>
+                <option>Pamarru</option>
+                <option>Bantumilli</option>
+                <option>Koduru</option>
+                <option>Avanigadda</option>
+                <option>Guduru</option>
+                <option>Mopidevi</option>
+                <option>Movva</option>
+                <option>Challapalli</option>
+                <option>Ghantasala</option>
+                <option>Kruthivennu</option>
+                <option>Nagayalanka</option>
+            </optgroup>
+
+            <!-- Ongole / Prakasam -->
+            <optgroup label="Ongole">
+                <option>Ongole</option>
+                <option>Santhanuthalapadu</option>
+                <option>Tangutur</option>
+                <option>Singarayakonda</option>
+                <option>Kandukur</option>
+                <option>Podili</option>
+                <option>Kanigiri</option>
+                <option>Darsi</option>
+                <option>Addanki</option>
+                <option>Markapur</option>
+                <option>Yerragondapalem</option>
+            </optgroup>
+
+            <!-- Kadapa -->
+            <optgroup label="Kadapa">
+                <option>Kadapa</option>
+                <option>Proddatur</option>
+                <option>Pulivendula</option>
+                <option>Jammalamadugu</option>
+                <option>Badvel</option>
+                <option>Rayachoti</option>
+                <option>Mydukur</option>
+                <option>Kamalapuram</option>
+                <option>Vempalli</option>
+                <option>Sidhout</option>
+                <option>Chinnamandem</option>
+            </optgroup>
+
+            <!-- Bapatla -->
+            <optgroup label="Bapatla">
+                <option>Bapatla</option>
+                <option>Chirala</option>
+                <option>Karlapalem</option>
+                <option>Pittalavanipalem</option>
+                <option>Repalle</option>
+                <option>Nagaram</option>
+                <option>Cherukupalli</option>
+                <option>Bhattiprolu</option>
+                <option>Vemuru</option>
+                <option>Kakumanu</option>
+                <option>Ponnur</option>
+                <option>Kollur</option>
+            </optgroup>
+
+            <!-- Chittoor -->
+            <optgroup label="Chittoor">
+                <option>Chittoor</option>
+                <option>Palamaner</option>
+                <option>Puthalapattu</option>
+                <option>Bangarupalem</option>
+                <option>Kuppam</option>
+                <option>Gangadhara Nellore</option>
+                <option>Pakala</option>
+                <option>Pileru</option>
+                <option>Srikalahasti</option>
+                <option>Nagari</option>
+                <option>Satyavedu</option>
+            </optgroup>
+
+            <!-- Kurnool -->
+            <optgroup label="Kurnool">
+                <option>Kurnool</option>
+                <option>Adoni</option>
+                <option>Nandyal</option>
+                <option>Yemmiganur</option>
+                <option>Pattikonda</option>
+                <option>Kodumur</option>
+                <option>Alur</option>
+                <option>Banaganapalle</option>
+                <option>Dhone</option>
+                <option>Bethamcherla</option>
+                <option>Gonegandla</option>
+                <option>Devanakonda</option>
+            </optgroup>
+
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="Pass Type">Pass Type:</label>
+        <select name="Pass Type" id="Pass Type">
+            <option>--Select Pass Type--</option>
+            <option value="Pass Type">GREATER PASS</option>
+            <option value="Pass Type">GENERAL ORDINARY ROUTE PASS MTLY</option>
+            <option value="Pass Type">GENERAL METRO EXPRESS ROUTE PASS MTLY </option>
+            <option value="Pass Type">ORDINARY PASS </option>
+            <option value="Pass Type">METRO EXPRESS PASS </option>
+            <option value="Pass Type">METRO DELUXE PASS</option>
+            <option value="Pass Type">Kurnool</option>
+        </select>
+        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        <select name="mode " id="mode">Payment Mode
+            <option value="mode">-- Payment Mode --</option>
+            <option value="mode">payment at counter</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="pmode " id="pmode">pass Mode
+            <option value="pmode">-- Pass Delivery Mode --</option>
+            <option value="pmode">At counter</option>
+        </select>
+    </fieldset>
+    <br>
+    <center>
+    <input type="submit">
+    </center>
+</body>
+
+</html>
