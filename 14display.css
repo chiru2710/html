@@ -1,5 +1,4 @@
 .container {
-    border: 2px solid black;
     display: flex;
     gap: 15px;
     height: 400px;
