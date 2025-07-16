@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="chiru.css" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left-links">
+            <a href="https://about.google/">About</a>
+            <a href="https://store.google.com/in/">Store</a>
+        </div>
+
+        <div class="right-links">
+            <a href="https://mail.google.com/">Gmail</a>
+            <a href="https://www.google.com/imghp">Images</a>
+            <a href="https://labs.google.com/search"><i class="bi bi-flask-fill"></i></a>
+
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="toggle-apps" hidden>
+
+            <!-- Label acts like button -->
+            <label for="toggle-apps" class="app">
+                <i class="bi bi-app"></i>
+            </label>
+
+            <!-- App Grid -->
+            <div class="app-grid">
+                <a href="https://myaccount.google.com/">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/avatar_square_blue_512dp.png">
+                    <span>Account</span>
+                </a>
+                <a href="https://drive.google.com/">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png">
+                    <span>Drive</span>
+                </a>
+                <a href="https://mail.google.com/">
+                    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico">
+                    <span>Gmail</span>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="https://www.gstatic.com/youtube/img/branding/favicon/favicon_144x144.png">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://gemini.google.com/">
+                    <img
+                        src="data:image/png;base64,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">
+                    <span>Gemini</span>
+                </a>
+                <a href="https://maps.google.com/">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/maps_gm_blue_48dp.png">
+                    <span>Maps</span>
+                </a>
+                <a href="https://www.google.com/">
+                    <img src="https://www.google.com/favicon.ico">
+                    <span>Search</span>
+                </a>
+                <a href="https://calendar.google.com/">
+                    <img
+                        src="data:image/png;base64,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">
+                    <span>Calendar</span>
+                </a>
+                <a href="https://news.google.com/">
+                    <img src="https://ssl.gstatic.com/news-static/img/favicon.ico">
+                    <span>News</span>
+                </a>
+                <a href="https://photos.google.com/">
+                    <img src="https://www.gstatic.com/images/branding/product/1x/photos_48dp.png">
+                    <span>Photos</span>
+                </a>
+                <a href="https://meet.google.com/">
+                    <img
+                        src="data:image/png;base64,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">
+                    <span>Meet</span>
+                </a>
+                <a href="https://translate.google.com/">
+                    <img src="https://ssl.gstatic.com/translate/favicon.ico">
+                    <span>Translate</span>
+                </a>
+
+            </div>
+
+            <a href="https://mail.google.com/" class="profile-pic">
+                <i class="bi bi-person-circle"></i>
+            </a>
+        </div>
+    </div>
+
+
+<!-- Center Section -->
+    <center>
+<div class="text-center mt-5">
+    <br><br><br><br><br><br>
+
+  <!-- Google-style Logo -->
+  <h1 style="font-size: 48px; font-weight: 500; font-family: 'Product Sans', Arial, sans-serif;">
+  <span style="color:#4285F4;">Y</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">u</span><span style="color:#34A853;">r</span><span style="color:#f904c8;">s</span>
+</h1>
+
+
+
+
+
+  <!-- Search Box -->
+  <form action="https://www.google.com/search" method="GET" class="search-box mb-4 mx-auto" style="max-width: 600px;">
+  <input type="text" name="q" class="form-control form-control-lg shadow-sm" placeholder="Search Google or type a URL" />
+</form>
+
+
+  <!-- Buttons -->
+  <div class="mb-4">
+    <button class="btn btn-light me-2">YOURS Search</button>
+    <button class="btn btn-light">I'm Feeling Lucky</button>
+  </div>
+
+  <!-- Language Options -->
+   <p style="font-size: 14px;">
+    Yours offers in the following:
+    <a href="https://www.google.com/">हिन्दी</a>
+    <a href="https://www.google.com/">বাংলা</a>
+    <a href="https://www.google.com/">తెలుగు</a>
+    <a href="https://www.google.com/">मराठी</a>
+    <a href="https://www.google.com/">தமிழ்</a>
+    <a href="https://www.google.com/">ગુજરાતી</a>
+    <a href="https://www.google.com/">ಕನ್ನಡ</a>
+    <a href="https://www.google.com/">മലയാളം</a>
+    <a href="https://www.google.com/">ਪੰਜਾਬੀ</a>
+  </p>
+</div>
+
+</center>
+
+
+
+</body>
+</html>

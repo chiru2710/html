@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: rgb(245, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.left-links a,
+.right-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.left-links a:hover,
+.right-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-pic {
+    width: 32px;
+    height: auto;
+    border-radius: 70%;
+}
+
+/* App icon styling */
+.app {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* App grid base */
+.app-grid {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    z-index: 1000;
+}
+
+/* Show app grid when checkbox is checked */
+#toggle-apps:checked+label+.app-grid {
+    display: grid;
+}
+
+.app-grid a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.app-grid img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.app-grid span {
+    display: block;
+    font-size: 10px;
+}
+ .logo-text {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Product Sans', Arial, sans-serif;
+  }
+
+  .search-box {
+    width: 40%;
+  }
+
+  .search-box input {
+    border-radius: 24px;
+    padding: 12px 20px;
+    border: 1px solid #dfe1e5;
+    transition: box-shadow 0.3s;
+  }
+
+  .search-box input:focus {
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  }
+
+  .btn-light {
+    border: 1px solid #f8f9fa;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    font-weight: 500;
+  }
+
+  .btn-light:hover {
+    background-color: #f8f9fa;
+  }
+
+  p a {
+    margin: 0 4px;
+    text-decoration: none;
+    color: #1a0dab;
+  }
+
+  p a:hover {
+    text-decoration: underline;
+  }
