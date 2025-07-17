@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* green box (tablet/desktop only) */
+.green-box {
+  display: none;
+  background-color: green;
+  color: black;
+  padding: 8px 12px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+/* Right side box wrapper */
+.middle-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Box styles */
+.red-box,
+.orange-box,
+.white-box,
+.hamburger-box {
+  display: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border: 2px solid black;
+  color: black;
+}
+
+.red-box { background-color: red; }
+.orange-box { background-color: orange; }
+.white-box { background-color: white; }
+
+/* Hamburger box (mobile only) */
+.hamburger-box {
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+/* -------------------------------- */
+/* Tablet view (351px - 799px) */
+@media screen and (min-width: 351px) and (max-width: 799px) {
+  .green-box {
+    display: block;
+  }
+  .white-box {
+    display: block;
+  }
+}
+
+/* -------------------------------- */
+/* Mobile view (≤ 350px) */
+@media screen and (max-width: 350px) {
+  .nav {
+    background-color: white;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .hamburger-box {
+    display: block;
+  }
+}
+
+/* -------------------------------- */
+/* Desktop view (≥ 800px) */
+@media screen and (min-width: 800px) {
+  .green-box {
+    display: block;
+  }
+  .red-box {
+    display: block;
+  }
+  .orange-box {
+    display: block;
+  }
+}
