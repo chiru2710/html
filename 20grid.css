@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b c"
+    "a b d"
+    "a e d"
+    "a f g"
+    "a f g"
+    "a h g"
+    "i h j"
+    "k l j"
+    "m l j"
+    "m l n"
+    "m l n"
+    "o l p"
+    "o q r"
+    "o q r";
+ 
+}
+
+img {
+  width: 100%;
+  height: 100%; /* keeps image aspect ratio */
+  display: block;
+}
+
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+.item6 { grid-area: f; }
+.item7 { grid-area: g; }
+.item8 { grid-area: h; }
+.item9 { grid-area: i; }
+.item10 { grid-area: j; }
+.item11 { grid-area: k; }
+.item12 { grid-area: l; }
+.item13 { grid-area: m; }
+.item14 { grid-area: n; }
+.item15 { grid-area: o; }
+.item16 { grid-area: p; }
+.item17 { grid-area: q; }
+.item18 { grid-area: r; }
+
+
+
+
